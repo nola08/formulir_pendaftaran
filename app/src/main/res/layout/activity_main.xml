@@ -1,0 +1,98 @@
+ n <?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- Judul Formulir -->
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Formulir Pendaftaran"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_gravity="center_horizontal"
+        android:paddingBottom="16dp" />
+
+    <!-- Nama Lengkap -->
+    <EditText
+        android:id="@+id/etNamaLengkap"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nama Lengkap"
+        android:inputType="textPersonName" />
+
+    <!-- Surel -->
+    <EditText
+        android:id="@+id/etSurel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Surel"
+        android:inputType="textEmailAddress" />
+
+    <!-- Nomor Telepon -->
+    <EditText
+        android:id="@+id/etNomorTelepon"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nomor Telepon"
+        android:inputType="phone" />
+
+    <!-- Jenis Kelamin -->
+    <RadioGroup
+        android:id="@+id/rgJenisKelamin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingTop="16dp">
+
+        <RadioButton
+            android:id="@+id/rbLakiLaki"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Laki-laki" />
+
+        <RadioButton
+            android:id="@+id/rbPerempuan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Perempuan" />
+    </RadioGroup>
+
+    <!-- Hobi -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hobi:"
+        android:paddingTop="16dp"
+        android:textStyle="bold" />
+
+    <CheckBox
+        android:id="@+id/cbHobi1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Membaca" />
+
+    <CheckBox
+        android:id="@+id/cbHobi2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Olahraga" />
+
+    <CheckBox
+        android:id="@+id/cbHobi3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Memasak" />
+
+    <!-- Tombol Kirim -->
+    <Button
+        android:id="@+id/btnKirim"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Kirim"
+        android:layout_marginTop="24dp" />
+
+</LinearLayout>
